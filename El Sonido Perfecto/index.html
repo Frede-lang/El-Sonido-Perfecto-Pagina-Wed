@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170f27">
+  <meta name="description" content="El Sonido Perfecto: instrumentos y accesorios para encontrar tu propia voz musical.">
+  <title>El Sonido Perfecto — Encuentra tu ritmo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Envío gratis en compras superiores a <strong>$250.000</strong> · 30 días para cambiar tu instrumento</div>
+  <header>
+  <div class="site-nav">
+    <a class="brand brand-symbol" href="#inicio" aria-label="El Sonido Perfecto, inicio"><img src="Imagen/Logo.png" alt="El Sonido Perfecto"></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#instrumentos">Catálogo</a><a href="#instrumentos">Ofertas</a><a href="#historia">Nosotros</a><a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <label class="search-box" aria-label="Buscar instrumentos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input id="search" type="search" placeholder="Buscar instrumentos" autocomplete="off"></label>
+      <button class="icon-button cart-button" id="cartButton" aria-label="Carrito, 0 artículos"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg></span><span class="cart-count" id="cartCount">0</span></button>
+      <button class="icon-button user-button" type="button" aria-label="Mi cuenta"><span aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20v-1.5a7 7 0 0 1 14 0V20z"></path></svg></span></button>
+    </div>
+  </div>
+</header>
+  <main>
+    <section class="hero" id="inicio">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">El sonido perfecto</div>
+      <h1>Encuentra tu sonido,<br>comienza tu música</h1>
+      <p>Instrumentos musicales premium, equipo de audio profesional y soporte experto para músicos, productores y escenarios que exigen calidad.</p>
+      <div class="hero-actions">
+        <a class="primary-link" href="#instrumentos">Explorar Catálogo <b>&#8594;</b></a>
+        <a class="secondary-link" href="#instrumentos">Ver Ofertas</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature"><span>&#9733;</span>Equipos de alta fidelidad</div>
+        <div class="hero-feature"><span>&#9788;</span>Soporte técnico especializado</div>
+        <div class="hero-feature"><span>&#8599;</span>Envío rápido y seguro</div>
+      </div>
+    </div>
+    <div class="hero-art"><img src="Imagen/Captura de pantalla 2026-10-29 142442.png" alt="Guitarra eléctrica, micrófono y audífonos en un estudio musical"></div>
+    <div class="scenario-card">
+      <h2>Equipos para cada escenario</h2>
+      <div class="scenario-options">
+        <a href="#instrumentos"><strong>Guitarras</strong><span>Instrumentos</span></a>
+        <a href="#instrumentos"><strong>Micrófonos</strong><span>Estudio</span></a>
+        <a href="#instrumentos"><strong>Audífonos</strong><span>Audio</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section wrap" id="instrumentos">
+      <div class="section-heading"><div><div class="eyebrow">Encuentra lo que buscas</div><h2>Instrumentos destacados</h2></div><p>Una selección para darle forma a tu sonido.</p></div>
+      <div class="categories" id="categories" aria-label="Filtrar por categoría"><button class="category active" data-category="Todos">Todo</button><button class="category" data-category="Cuerdas">Cuerdas</button><button class="category" data-category="Teclas">Teclas</button><button class="category" data-category="Percusión">Percusión</button><button class="category" data-category="Accesorios">Accesorios</button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+    <section class="story wrap" id="historia"><div class="story-box"><div class="story-art" aria-hidden="true">??</div><div class="story-copy"><div class="eyebrow">Una tienda con oído</div><h2>El instrumento correcto cambia todo.</h2><p>En El Sonido Perfecto creemos que la música es para todos. Por eso elegimos instrumentos que inspiran, duran y te invitan a tocar una canción más.</p><a href="#contacto">Conoce más sobre nosotros ?</a></div></div></section>
+    <section class="newsletter" id="contacto"><div class="wrap newsletter-row"><div><h2>Una nota de vez en cuando.</h2><p>Novedades, consejos y lanzamientos directo a tu correo.</p></div><form class="subscribe" id="subscribeForm"><input type="email" id="email" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required><button type="submit">Quiero recibirlas ?</button></form></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">?</span><span>el sonido<small>PERFECTO</small></span></a><p>© 2026 El Sonido Perfecto · Hecho para quienes hacen música.</p><div class="social"><a href="#contacto">Instagram</a><a href="#contacto">WhatsApp</a></div></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
